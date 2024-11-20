@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mana Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mana Tracker</h1>
+        <div class="stats">
+            <p>Turn: <span id="turnNumber">1</span></p>
+            <p>Health: <span id="health">0</span></p>
+            <p>Armor: <span id="armor">0</span></p>
+            <p>Mana: <span id="manaDisplay">0</span></p>
+        </div>
+        <div class="setup">
+            <input type="number" id="initialHealth" placeholder="Initial Health">
+            <button id="setHealth">Set Health</button>
+        </div>
+        <div class="buttons">
+            <button id="nextTurn">Next Turn</button>
+            <button id="addArmor">Add Armor</button>
+            <button id="removeArmor">Remove Armor</button>
+            <div id="manaButtons">
+                <h3>Add Mana:</h3>
+                <button class="mana-btn" data-mana="black">Black</button>
+                <button class="mana-btn" data-mana="red">Red</button>
+                <button class="mana-btn" data-mana="blue">Blue</button>
+                <button class="mana-btn" data-mana="white">White</button>
+                <button class="mana-btn" data-mana="yellow">Yellow</button>
+                <button class="mana-btn" data-mana="purple">Purple</button>
+                <button class="mana-btn" data-mana="colorless">Colorless</button>
+                <button id="addTemporaryMana">Add Temporary Mana</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
